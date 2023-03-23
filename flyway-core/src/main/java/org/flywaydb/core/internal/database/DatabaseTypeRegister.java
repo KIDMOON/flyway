@@ -24,6 +24,7 @@ import org.flywaydb.core.internal.database.cockroachdb.CockroachDBDatabaseType;
 import org.flywaydb.core.internal.database.db2.DB2DatabaseType;
 import org.flywaydb.core.internal.database.derby.DerbyDatabaseType;
 
+import org.flywaydb.core.internal.database.dm.DMDatabaseType;
 import org.flywaydb.core.internal.database.firebird.FirebirdDatabaseType;
 import org.flywaydb.core.internal.database.h2.H2DatabaseType;
 import org.flywaydb.core.internal.database.hsqldb.HSQLDBDatabaseType;
@@ -85,6 +86,8 @@ public class DatabaseTypeRegister {
             registeredDatabaseTypes.add(new InformixDatabaseType());
             registeredDatabaseTypes.add(new MySQLDatabaseType());
             registeredDatabaseTypes.add(new OracleDatabaseType());
+            registeredDatabaseTypes.add(new DMDatabaseType());
+
             registeredDatabaseTypes.add(new PostgreSQLDatabaseType());
             registeredDatabaseTypes.add(new SAPHANADatabaseType());
             registeredDatabaseTypes.add(new SnowflakeDatabaseType());
